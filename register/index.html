@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt | Victoria Z Workshop</title>
+    <meta name="description" content="Kontakta Victoria Z Workshop om ljudfilerna till Första boken.">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="../assets/site-config.js"></script>
+    <script src="../assets/app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="brand" href="../audio/" data-site-name>Victoria Z Workshop</a>
+          <nav class="nav" aria-label="Huvudnavigation">
+            <a href="../audio/">Ljud</a>
+            <a href="./" aria-current="page">Kontakt</a>
+            <a href="../privacy/">Integritet</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <img class="cover" src="../assets/cover-placeholder.svg" alt="Omslag för Första boken" data-cover-image>
+          <div>
+            <p class="eyebrow">Kontakt</p>
+            <h1>Kontakta oss</h1>
+            <p class="lede">Skicka gärna frågor om ljudfilerna, kapitelordningen eller framtida uppdateringar.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="panel">
+            <form class="registration-form" action="mailto:wei.zhang0319@gmail.com" method="post" enctype="text/plain">
+              <fieldset class="choice-group">
+                <legend>Kontaktväg</legend>
+                <div class="segmented">
+                  <label><input type="radio" name="contactType" value="email" checked> E-post</label>
+                  <label><input type="radio" name="contactType" value="whatsapp"> WhatsApp</label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="register-contact">Din e-postadress</label>
+                <input id="register-contact" name="contactValue" type="email" required>
+              </div>
+
+              <div class="field">
+                <label for="register-channel">Meddelande</label>
+                <textarea id="register-channel" name="message" rows="5" placeholder="Skriv ditt meddelande"></textarea>
+              </div>
+
+              <div class="field">
+                <label for="register-country">Land eller region</label>
+                <input id="register-country" name="country" autocomplete="country-name" placeholder="Sverige">
+              </div>
+
+              <button class="button" type="submit">Öppna e-post</button>
+              <p class="form-status">Formuläret öppnar ditt vanliga e-postprogram.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

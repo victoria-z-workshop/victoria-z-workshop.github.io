@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Victoria Z Workshop | Första boken</title>
+    <meta name="description" content="Lyssna på ljudfiler till Första boken från Victoria Z Workshop.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <script src="../../assets/site-config.js"></script>
+    <script src="../../assets/app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="brand" href="../../" data-site-name>Victoria Z Workshop</a>
+          <nav class="nav" aria-label="Huvudnavigation">
+            <a href="./" aria-current="page">Ljud</a>
+            <a href="#chapters">Kapitel</a>
+            <a href="#migration">Framtida flytt</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <img class="cover" src="../../assets/cover-placeholder.svg" alt="Omslag för Första boken" data-cover-image>
+          <div>
+            <p class="eyebrow" data-site-name>Victoria Z Workshop</p>
+            <h1 data-book-title>Första boken</h1>
+            <p class="lede">
+              <span data-book-subtitle>Lyssna på bokens kompletterande ljudfiler</span>.
+              Författare: <strong data-author-name>Victoria Z Workshop</strong>
+            </p>
+            <p class="fineprint">Det här är en första testsida. När boken publiceras bör QR-koden leda till den här stabila sidan, inte direkt till en MP3-fil.</p>
+            <div class="actions">
+              <a class="button" href="#chapters">Börja lyssna</a>
+              <a class="button button--secondary" href="#migration">Läs om framtida flytt</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="chapters">
+          <div>
+            <h2>Kapitel och ljudfiler</h2>
+            <p class="fineprint">Varje kapitel kan spelas upp direkt i webbläsaren. MP3-filerna är offentliga och kan laddas ner; den här första versionen är främst till för bokbonus och marknadstest.</p>
+            <div class="chapter-list" data-chapter-list></div>
+          </div>
+        </section>
+
+        <section class="section section--split" id="migration">
+          <div>
+            <h2>Framtida flytt</h2>
+            <p class="fineprint">Just nu hämtas ljudet från <code>audio-files/</code>. Om ljudet senare flyttas till objektlagring, ett CDN eller en ljudplattform behöver du bara ändra <code>mediaBaseUrl</code> eller <code>src</code> i <code>assets/site-config.js</code>. QR-kodens adress kan vara densamma.</p>
+          </div>
+          <aside class="panel panel--soft">
+            <h2>Kontakt</h2>
+            <p class="fineprint">Om ett ljud inte fungerar, om kapitlen ligger i fel ordning eller om en länk behöver uppdateras, kontakta <a href="#" data-feedback-link data-feedback-email>wei.zhang0319@gmail.com</a>.</p>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Frågor om ljudfilerna: <a href="#" data-feedback-link data-feedback-email>wei.zhang0319@gmail.com</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Omslagsbild för Första boken</title>
+  <desc id="desc">En tillfällig omslagsbild för ljudsidan.</desc>
+  <rect width="800" height="1080" fill="#fffdf8"/>
+  <rect x="56" y="56" width="688" height="968" fill="#f6f8fb" stroke="#d8dee8" stroke-width="4"/>
+  <path d="M128 792c118-92 244-112 382-60 52 20 104 26 162 18v118c-70 15-136 7-198-22-122-56-236-34-346 66z" fill="#0f6f6a"/>
+  <path d="M128 258h340v34H128zm0 82h544v22H128zm0 48h476v22H128z" fill="#1c2430"/>
+  <circle cx="624" cy="260" r="56" fill="#b84c33"/>
+  <text x="128" y="556" font-family="Arial, sans-serif" font-size="74" font-weight="700" fill="#1c2430">Ljudbok</text>
+  <text x="128" y="632" font-family="Arial, sans-serif" font-size="48" fill="#5d6978">Första boken</text>
+</svg>
