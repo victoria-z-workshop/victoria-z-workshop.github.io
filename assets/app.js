@@ -22,7 +22,7 @@ function hydrateText() {
   });
 
   document.querySelectorAll("[data-cover-image]").forEach((image) => {
-    image.src = config.coverImage || "../assets/cover-placeholder.svg";
+    image.src = config.coverImage || "/assets/cover-placeholder.svg";
     image.alt = `${config.bookTitle || "Bok"} omslag`;
   });
 }
@@ -52,10 +52,9 @@ function renderChapters() {
           <p>${escapeHtml(chapter.duration || "Ljudfil")}</p>
         </div>
       </div>
-      <audio controls preload="metadata">
+      <audio controls controlsList="nodownload" disablepictureinpicture preload="metadata">
         <source src="${escapeAttribute(source)}" type="audio/mpeg">
       </audio>
-      <a class="text-link" href="${escapeAttribute(source || "#")}" download>Ladda ner MP3</a>
     `;
     list.appendChild(item);
   });
@@ -63,7 +62,7 @@ function renderChapters() {
 
 function resolveChapterSource(chapter) {
   if (chapter.src) return chapter.src;
-  const baseUrl = config.mediaBaseUrl || "../audio-files/";
+  const baseUrl = config.mediaBaseUrl || "/audio-files/";
   const separator = baseUrl.endsWith("/") ? "" : "/";
   return `${baseUrl}${separator}${chapter.filename || ""}`;
 }
