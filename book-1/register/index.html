@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrera | Skogens Hemligheter | Victoria Z Workshop</title>
+    <meta name="description" content="Registrera din e-postadress för publicerade ljudavsnitt till Skogens Hemligheter.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <script src="../../assets/site-config.js"></script>
+    <script src="../../assets/app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="brand" href="../audio/" data-site-name>Victoria Z Workshop</a>
+          <nav class="nav" aria-label="Huvudnavigation">
+            <a href="../audio/">Ljud</a>
+            <a href="./" aria-current="page">Registrera</a>
+            <a href="../../privacy/">Integritet</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="narrow-main">
+        <section class="section">
+          <p class="eyebrow" data-book-title>Skogens Hemligheter</p>
+          <h1 class="page-title">Lås upp ljudet</h1>
+          <p class="lede">Registreringen gäller de avsnitt som är reserverade för bokens läsare. Förord, Innehåll och Prolog kan du lyssna på utan registrering när de publiceras.</p>
+          <p class="recording-note">Inspelning pågår. Registreringen ger tillgång till de avsnitt som har publicerats. Fler avsnitt kommer efter hand.</p>
+
+          <div class="recording-notice" data-registration-pending role="status">
+            <strong>Registreringen öppnar snart</strong>
+            <p>Kontrollfrågorna ur boken förbereds. Du behöver inte lämna din e-postadress ännu. Välkommen tillbaka!</p>
+          </div>
+
+          <div class="panel registration-panel" data-registration-panel hidden>
+            <p>Efter registreringen kommer den här webbläsaren ihåg din åtkomst i 180 dagar.</p>
+            <form class="registration-form" data-registration-form novalidate>
+              <div class="field">
+                <label for="reader-email">E-postadress</label>
+                <input id="reader-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+              </div>
+
+              <div class="question-box">
+                <div>
+                  <span class="field-label">Fråga ur boken</span>
+                  <p data-question-prompt>Frågan hämtas ...</p>
+                </div>
+                <button class="text-button" type="button" data-new-question>Ny fråga</button>
+              </div>
+              <input name="challenge" type="hidden">
+
+              <div class="field">
+                <label for="reader-answer">Ditt svar</label>
+                <input id="reader-answer" name="answer" type="text" autocomplete="off" maxlength="120" required>
+              </div>
+
+              <label class="checkbox">
+                <input name="consent" type="checkbox" required>
+                <span>Jag godkänner att Victoria Z Workshop behandlar min e-postadress för att ge mig tillgång till ljudet och ge kundsupport. Uppgifterna används inte för marknadsföring. <a href="../../privacy/">Läs integritetsinformationen</a>.</span>
+              </label>
+
+              <button class="button" type="submit" data-registration-submit disabled>Lås upp ljudet</button>
+              <p class="form-status" data-registration-status aria-live="polite"></p>
+            </form>
+          </div>
+          <p class="back-link"><a href="../audio/">Tillbaka till ljudsidan</a></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

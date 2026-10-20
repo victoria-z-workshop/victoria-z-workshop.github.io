@@ -1,4 +1,5 @@
 /audio /book-1/audio/ 301
-/register /register/ 301
+/register /book-1/register/ 302
+/book-1/register /book-1/register/ 301
 /privacy /privacy/ 301
 / /book-1/audio/ 302
