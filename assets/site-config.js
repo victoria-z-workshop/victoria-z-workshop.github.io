@@ -59,50 +59,57 @@ window.BOOK_AUDIO_CONFIG = {
       id: "kapitel-01",
       title: "Kapitel 1: Flickan och vargen",
       access: "protected",
-      published: false,
-      filename: "05-kapitel-01.mp3"
+      published: true,
+      filename: "05-kapitel-01.mp3",
+      duration: "25:57"
     },
     {
       id: "kapitel-02",
       title: "Kapitel 2: En väg hem",
       access: "protected",
-      published: false,
-      filename: "06-kapitel-02.mp3"
+      published: true,
+      filename: "06-kapitel-02.mp3",
+      duration: "36:25"
     },
     {
       id: "kapitel-03",
       title: "Kapitel 3: När mjuka ögon möts",
       access: "protected",
-      published: false,
-      filename: "07-kapitel-03.mp3"
+      published: true,
+      filename: "07-kapitel-03.mp3",
+      duration: "33:43"
     },
     {
       id: "kapitel-04",
       title: "Kapitel 4: En inre strid",
       access: "protected",
-      published: false,
-      filename: "08-kapitel-04.mp3"
+      published: true,
+      filename: "08-kapitel-04.mp3",
+      duration: "13:16"
     },
     {
       id: "kapitel-05",
       title: "Kapitel 5: Fiender föds inte",
       access: "protected",
-      published: false,
-      filename: "09-kapitel-05.mp3"
+      published: true,
+      filename: "09-kapitel-05.mp3",
+      duration: "19:47"
     },
     {
       id: "kapitel-06",
       title: "Kapitel 6: Ljuset i mörkret",
       access: "protected",
-      published: false,
-      filename: "10-kapitel-06.mp3"
+      published: true,
+      filename: "10-kapitel-06.mp3",
+      duration: "29:29"
     },
     {
       id: "kapitel-07",
       title: "Kapitel 7: En annan stig att gå",
       access: "protected",
-      published: false,
-      filename: "11-kapitel-07.mp3"
+      published: true,
+      filename: "11-kapitel-07.mp3",
+      duration: "18:38"
     },
     {
       id: "kapitel-08",
