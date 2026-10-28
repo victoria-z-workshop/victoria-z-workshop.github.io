@@ -55,7 +55,7 @@ function renderChapters(protectedManifest = [], hasAccess = false) {
     const playable = protectedById.get(chapter.id) || chapter;
     const description = published
       ? chapter.duration || (chapter.access === "public" ? "Fri provlyssning" : "Ljud till boken")
-      : "Inspelning och ljudbearbetning pågår";
+      : "Ännu inte publicerat";
     const item = document.createElement("article");
     item.className = `chapter${unlocked ? "" : " chapter--locked"}`;
     item.innerHTML = `
@@ -127,7 +127,7 @@ function setAccessState(unlocked, expiresAt, message) {
       ? `Ljudet är upplåst på den här enheten till ${formatDate(expiresAt)}.`
       : hasPublished
         ? "De fyra första avsnitten är fria att lyssna på. Från kapitel 1 krävs registrering."
-        : "Inspelning pågår. Ljudfilerna publiceras här efter hand när de är klara.");
+        : "Välj ett avsnitt i ljudförteckningen.");
     summary.dataset.tone = message ? "error" : unlocked ? "success" : "neutral";
   }
   if (unlockLink) unlockLink.hidden = unlocked || !hasPublished || !config.registrationOpen;
